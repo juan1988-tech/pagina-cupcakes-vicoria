@@ -42,10 +42,13 @@ h6{
 /*clases*/
 .principal-title{
     font-family: 'Lobster', cursive; 
-    letter-spacing: 1px; 
+    letter-spacing: 5px; 
     font-size: 56px;
     margin: 0px;
     margin-top: 32px;
+    /* color: #fcd7fc; */
+    color:#ff4dff;
+    text-shadow: -1px -1px 0px white, 1px 1px 0px white, -1px 1px 0px white, 1px -1px 0px white;
 }
 
 .figure-logo{
@@ -54,13 +57,60 @@ margin: 0px;
 
 .menu{
  margin: 16px 0px 16px 0px;   
- width: 410px;
+ width: 30%;
+ font-size: 20px;
 }
 .menu ol,ul{
 display: flex;
 flex-direction: row;
 justify-content: space-between;
+align-items: center;
 list-style: none;
+color: #fcd7fc;
 }
 
+.special-title h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #059ff2;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 2px;
+    font-size: 32px;
+    text-align: center;
+    font-weight: 400;
+}
 
+.grid-title{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    font-size: xx-large;
+    color: #ff4dff;
+}
+
+.container{
+    display: grid;
+    grid-template: repeat(5, 450px)/ repeat(3, 500px);
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+#grid-item{
+    /* border: 1px solid black; */
+    text-align: center;
+    margin: 5px;
+    box-shadow: 2px 2px 2px 2px  rgba(0, 0, 0,0.2);
+}
+
+#grid-item img{
+    width: 100%;
+    height: 80%;
+}
+
+#grid-item p{
+    font-weight: 900;
+    color: #059ff2;
+}
