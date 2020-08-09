@@ -1,0 +1,66 @@
+/*etiquetas de estructuracion*/
+body{
+    background-color: #fcfae8;
+    margin: 0px;
+}
+
+header{
+    background-color: #3b012f;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid grey;
+}
+
+footer{
+    background-color: #3b012f;
+    color: white;
+}
+
+/*etiquetas tipograficas*/
+*{
+    font-family: 'Handlee', cursive;
+}
+ol,ul{
+margin: 0px;
+padding:0px;
+list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  /* font-family: 'Lobster', cursive;  */
+  font-family: 'Luckiest Guy', cursive;
+}
+
+/*clases*/
+.principal-title{
+    font-family: 'Lobster', cursive; 
+    letter-spacing: 1px; 
+    font-size: 56px;
+    margin: 0px;
+    margin-top: 32px;
+}
+
+.figure-logo{
+margin: 0px;
+}
+
+.menu{
+ margin: 16px 0px 16px 0px;   
+ width: 410px;
+}
+.menu ol,ul{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+list-style: none;
+}
+
+
