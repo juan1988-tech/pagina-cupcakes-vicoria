@@ -98,6 +98,13 @@ color: #fcd7fc;
     justify-content: center;
 }
 
+.container-combos{
+    display: grid;
+    grid-template: repeat(2, 450px)/ repeat(3, 500px);
+    grid-gap: 10px;
+    justify-content: center;
+}
+
 #grid-item{
     /* border: 1px solid black; */
     text-align: center;
@@ -113,4 +120,47 @@ color: #fcd7fc;
 #grid-item p{
     font-weight: 900;
     color: #059ff2;
+}
+
+#form{
+    text-align: center;
+    flex-direction: row;   
+}
+
+.form-title-2{
+    font-size: 30px;
+    color: #059ff2;
+    letter-spacing: 1.2px;
+}
+
+.form-title-3{
+    font-size: 24px;
+    color: #059ff2;
+    letter-spacing: 1.2px;
+}
+
+#form-title-name{
+    width: 260px;
+}
+
+#form p{
+    color: #3b012f;
+    font-weight: 900;
+}
+
+#histories{
+    display: grid;
+    grid-template: repeat(1, 320px)/repeat(3, 1fr); 
+    background-color: rgba(59, 1, 47, 0.3);
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+#histories-grid{
+    text-align: center;
+}
+
+form h3{
+    margin: 0px;
 }
