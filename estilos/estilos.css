@@ -150,17 +150,51 @@ color: #fcd7fc;
 
 #histories{
     display: grid;
-    grid-template: repeat(1, 320px)/repeat(3, 1fr); 
+    grid-template: repeat(1, 1fr)/repeat(3, 550px);
+    height: 250px; 
     background-color: rgba(59, 1, 47, 0.3);
-    justify-items: center;
+    /* grid-gap: 10% 10%; */
     align-items: center;
-    text-align: center;
+    justify-content: space-around;
+    justify-items: center;
+    padding: 50px 10px;
 }
 
-#histories-grid{
-    text-align: center;
+#histories-grid{ 
+   text-align: center;
+   display: grid;
+   grid-template: 40% 60%/40% 60%;
+   grid-template-areas:"photo link"
+                        "photo message"; 
+   align-self: center;
+   background-color: rgba(112,112,112, 0.7);
+   width: 100%;
+   height: 100%;
+   justify-items: center;
+   padding: 10px;
+   border: 1px solid transparent;
 }
 
+#photo{
+    grid-area: photo;
+    align-self: center;
+}
+
+#link{
+   grid-area: link;
+   align-self: center;
+   text-decoration: none;
+   color: #03fcdf;
+   font-size: 2em;
+}
+
+#message{
+    grid-area: message;
+}
+
+.image{
+    border-radius: 50%;
+}
 form h3{
     margin: 0px;
 }
