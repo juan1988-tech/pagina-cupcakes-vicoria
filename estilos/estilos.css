@@ -68,18 +68,53 @@ align-items: center;
 list-style: none;
 color: #fcd7fc;
 }
-
-.special-title h1{
+.special-title {
+    height: 100px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;   
+    position: relative; 
+    /* border: 3px solid black; */
+}
+
+
+.special-title-h1 {
     color: #059ff2;
     font-family: 'Lobster', cursive;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-size: 32px;
     text-align: center;
     font-weight: 400;
+    animation-name: growthSize;
+    /* animation-name: position; */
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    position: absolute;
 }
+
+
+.special-title-h1:link {
+
+}
+
+@keyframes growthSize {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.5);
+    }
+}
+
+/* @keyframes position {
+    from{
+        transform: translatey(0px);
+    }
+    to{
+        transform: translatey(10px);
+    }
+} */
 
 .grid-title{
     display: flex;
@@ -89,6 +124,16 @@ color: #fcd7fc;
     letter-spacing: 1.5px;
     font-size: xx-large;
     color: #ff4dff;
+}
+
+.grid-title-blue{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    font-size: xx-large;
+    color: #059ff2;
 }
 
 .container{
@@ -274,7 +319,7 @@ width: 100%;
 #social-media a:first-child{
     height: 50px;
     width: 50px;
-    background-image: url('instagram.svg');
+    background-image: url('social-media/instagram.svg');
     background-size: 100% 100%;
     margin-right: 10px;
     
@@ -283,7 +328,7 @@ width: 100%;
 #social-media a:nth-child(2){
     height: 50px;
     width: 50px;
-    background-image: url('facebook-svg.svg');
+    background-image: url('social-media/facebook-svg.svg');
     background-size: 100% 100%;
     margin-right: 10px;
 
@@ -294,3 +339,21 @@ width: 100%;
     color: #03fcdf;
     font-weight: 900;
 }
+
+.li-link {
+    border: 1px solid white;
+    padding: 5px 5px 5px 5px;
+    border-radius: 4px;
+}
+.menu-link {
+    text-decoration: none;
+    color: #fcd7fc;
+    
+}
+
+.menu-link:hover {
+    font-size: 22px;
+    color: #03fcdf;
+    transition-duration: 0.5s;
+}
+
